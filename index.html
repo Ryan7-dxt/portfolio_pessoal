@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ryan Rodrigues - Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <main>
+
+        <section class="home">
+
+
+
+            <div class="foto">
+
+                <img src="ryan.jpg" alt="Foto de Ryan Rodrigues">
+
+            </div>
+
+
+            <div class="titulo">
+
+                <h1>Ryan Rodrigues</h1>
+
+                <hr class="linha">
+
+            </div>
+
+
+
+            <div class="area">
+
+
+
+                <div class="botoes esquerda">
+
+                    <button onclick="mostrarConteudo('sobre')">
+                        Sobre mim
+                    </button>
+
+                    <button onclick="mostrarConteudo('contato')">
+                        Contato
+                    </button>
+
+                </div>
+
+
+                <div class="conteudo" id="conteudo">
+
+                    <h2>Olá!</h2>
+
+                    <p>
+                        Bem-vindo ao meu portfólio.
+                    </p>
+
+                    <p>
+                        Clique em uma das opções ao redor
+                        para conhecer mais sobre mim.
+                    </p>
+
+                </div>
+
+
+                <div class="botoes direita">
+
+                    <button onclick="mostrarConteudo('certificados')">
+                        Certificados
+                    </button>
+
+                    <button onclick="mostrarConteudo('projetos')">
+                        Projetos
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        function mostrarConteudo(opcao) {
+
+            let conteudo = document.getElementById("conteudo");
+
+
+            /* SOBRE MIM */
+
+            if (opcao === "sobre") {
+
+                conteudo.innerHTML = `
+
+                    <h2>Sobre mim</h2>
+
+                    <p>
+                        Meu nome é Ryan Rodrigues e sou
+                        estudante de Desenvolvimento de Sistemas.
+                    </p>
+
+                    <p>
+                        Tenho interesse por tecnologia,
+                        programação e desenvolvimento de sites.
+                    </p>
+
+                    <p>
+                        Atualmente estudo HTML, CSS, Python,
+                        PHP, C++ e banco de dados.
+                    </p>
+
+                `;
+
+            }
+
+
+               else if (opcao === "contato") {
+
+                conteudo.innerHTML = `
+
+                  <h2 class="titulo-contato">📞 Contato</h2>
+
+                    <p class="texto-contato">
+                 💬 Entre em contato comigo:
+                 </p>
+
+                 <p class="info-contato">
+                 <strong>📧 Email:</strong><br>
+                   ryan.rodrigues@email.com
+                 </p>
+
+                  <p class="info-contato">
+                  <strong>🐙 GitHub:</strong><br>
+                  github.com/ryanrodrigues
+                </p>
+
+                 `;
+
+                }
+
+
+        
+
+            else if (opcao === "certificados") {
+
+                conteudo.innerHTML = `
+
+                    <h2>Certificados</h2>
+
+                    <div class="item">
+
+                        <h3>🎓HTML e CSS</h3>
+
+                        <p>
+                            Estudos sobre criação e estilização
+                            de páginas web.
+                        </p>
+
+                    </div>
+
+                    <div class="item">
+
+                        <h3>📚 Introdução à Programação</h3>
+
+                        <p>
+                            Estudos sobre lógica de programação
+                            e algoritmos.
+                        </p>
+
+                    </div>
+
+                    <div class="item">
+
+                        <h3>🐍Python</h3>
+
+                        <p>
+                            Estudos sobre fundamentos da linguagem
+                            Python e lógica de programação.
+                        </p>
+
+                    </div>
+
+                `;
+
+            }
+
+
+            else if (opcao === "projetos") {
+
+                conteudo.innerHTML = `
+
+                    <h2>Projetos</h2>
+
+                    <div class="item">
+
+                        <h3> 📚Biblioteca</h3>
+
+                        <p>
+                            Site desenvolvido para representar
+                            uma biblioteca.
+                        </p>
+
+                        <strong>HTML, CSS, PHP e MySQL</strong>
+
+                    </div>
+
+
+                    <div class="item">
+
+                        <h3> 🌸Floricultura</h3>
+
+                        <p>
+                            Site desenvolvido para uma
+                            floricultura.
+                        </p>
+
+                        <strong>HTML e CSS</strong>
+
+                    </div>
+
+
+                    <div class="item">
+
+                        <h3> 🐕Petshop</h3>
+
+                        <p>
+                            Site desenvolvido para apresentar
+                            serviços e informações de um petshop.
+                        </p>
+
+                        <strong>HTML, CSS e PHP</strong>
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
